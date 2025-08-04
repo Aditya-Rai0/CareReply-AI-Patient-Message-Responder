@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareReply - AI Patient Responder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>CareReply 🤖</h1>
+            <p>AI Patient Message Responder</p>
+        </header>
+
+        <section class="io-section">
+            <label for="patient-message">Patient's Message</label>
+            <textarea id="patient-message" rows="6" placeholder="Paste or type the patient's message here..."></textarea>
+            <button id="generate-btn">Generate Response</button>
+        </section>
+
+        <section class="io-section">
+            <label for="ai-response">Suggested Response (Editable)</label>
+            <textarea id="ai-response" rows="8" placeholder="AI-generated response will appear here..."></textarea>
+            <button id="copy-btn">Copy Text</button>
+        </section>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

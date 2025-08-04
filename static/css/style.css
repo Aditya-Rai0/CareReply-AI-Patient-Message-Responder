@@ -1,0 +1,86 @@
+/* General body styling for the futuristic theme */
+body {
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #e0e0e0; /* Light grey text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container for the app */
+.container {
+    background-color: #162447; /* Slightly lighter blue */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #0f3460;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    color: #e94560; /* Accent color */
+    margin: 0;
+}
+
+.io-section {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #e94560;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #0f3460;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 10px #e94560;
+}
+
+button {
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f46a7e;
+}
+
+button:active {
+    transform: scale(0.98);
+}
